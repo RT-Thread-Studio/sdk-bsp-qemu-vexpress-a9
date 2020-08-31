@@ -12,7 +12,6 @@
 build
 Debug
 documentation/html
-packages/
 *~
 *.o
 *.obj
@@ -38,5 +37,3 @@ DebugConfig/
 RTE/
 settings/
 *.uvguix*
-cconfig.h
-drivers/automac.h
