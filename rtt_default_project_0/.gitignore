@@ -9,7 +9,6 @@
 *.pdb
 *.idb
 *.ilk
-*.old
 build
 Debug
 documentation/html
@@ -40,5 +39,4 @@ RTE/
 settings/
 *.uvguix*
 cconfig.h
-.settings
 drivers/automac.h
