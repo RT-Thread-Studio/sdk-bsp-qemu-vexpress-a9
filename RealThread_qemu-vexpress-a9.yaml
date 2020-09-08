@@ -1,32 +1,36 @@
 board:
-  buy_url_cn: ''
-  buy_url_global: ''
-  debug_interface: ''
-  debugger: ''
-  description_en: null
-  description_zh: null
-  emulator_machine: qemu-vexpress-a9
-  large_image: ''
   name: qemu-vexpress-a9
-  price_cn: ''
-  price_global: ''
-  sale_contact_cn: ''
-  sale_contact_global: ''
-  small_image: ''
-  vendor: ''
-  version: ''
+  version: Rev.A
+  vendor: ATK
+  description_zh: 潘多拉 IoT Board 是正点原子和 RT-Thread 联合出品，定位为 IoT 物联网开发板。板载资源非常丰富，集成度非常高。同时潘多拉开发板也是正点原子和
+    RT-Thread 指定的 IoT 开发板。
+  description_en: Pandora IoT Board is a joint product of ATK and RT-Thread, and is
+    positioned as an IoT development board. The onboard resources are very rich and
+    the integration is very high. At the same time, the Pandora development board
+    is also an IoT development board designated by ATK and RT-Thread.
+  small_image: documents/images/board_small.png
+  large_image: documents/images/board_large.png
+  sale_contact_cn: http://www.st.com/stonline/contactus/contacts/index.php
+  sale_contact_global: http://www.st.com/stonline/contactus/contacts/index.php
+  buy_url_cn: http://www.alientek.com/
+  buy_url_global: http://www.alientek.com/
+  price_cn: 238.00 CNY
+  price_global: 35.00 USD
+  debugger: ST-LINK
+  debug_interface: SWD
+  emulator_machine: qemu-vexpress-a9
 chip:
-  chip_name: ''
-  clock_source: ''
-  device_vendor: ''
-  family_name: ''
-  rx_name: ''
-  series_name: ''
-  source_freq: ''
-  sub_series_name: ''
-  target_freq: ''
-  tx_name: ''
-  uart_name: ''
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  series_name: STM32L4
+  sub_series_name: STM32L475
+  chip_name: STM32L475VETx
+  rx_name: PA10
+  tx_name: PA9
+  clock_source: HSE
+  source_freq: '8000000'
+  target_freq: '240000000'
+  uart_name: UART1
 default_projects:
 - builtin_files:
   - files_and_folders:
@@ -78,11 +82,8 @@ default_projects:
   project_type: rt-thread|@full|@4.0.2
 docs:
 - category: manual
-  file: documents/manuals/UM3004-RT-Thread-IoT Board.pdf
-  title: Rt-Thread IoT Board
-- category: sheet
-  file: documents/sheet/STM32L475xx Datasheet.pdf
-  title: STM32L475xx Datasheet
+  file: documents/manuals/QEMU System Emulation User’s Guide.pdf
+  title: User’s Guide
 example_projects: []
 features:
 - On-board ST-LINK/V2.1
