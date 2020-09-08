@@ -1,36 +1,35 @@
 board:
   name: qemu-vexpress-a9
   version: Rev.A
-  vendor: ATK
-  description_zh: 潘多拉 IoT Board 是正点原子和 RT-Thread 联合出品，定位为 IoT 物联网开发板。板载资源非常丰富，集成度非常高。同时潘多拉开发板也是正点原子和
-    RT-Thread 指定的 IoT 开发板。
-  description_en: Pandora IoT Board is a joint product of ATK and RT-Thread, and is
-    positioned as an IoT development board. The onboard resources are very rich and
-    the integration is very high. At the same time, the Pandora development board
-    is also an IoT development board designated by ATK and RT-Thread.
+  vendor: ARM
+  description_zh: Versatile Express系统由ARM Ltd提供，作为CortexA9四核处理器的开发环境，硬件由uATX主板和CoreTile Express A9x4子板组成。有关该系统的详细信息，可以访问 ARM官方页面 。
+    Versatile Express的核心是一套FPGA的开发环境，Cortex-A芯片基于FPGA上的硬件逻辑，所以本身是不存在这么一款真实芯片。
+    QEMU/VExpress A9是QEMU模拟器针对ARM VExpress-A9 FPGA开发板进行软件模拟的指令级虚拟机。QEMU/VExpress因为是软件仿真模式，可以配置成多种模式，例如单核Cortex-A9，多核Cortex-A9，以及多核Cortex-A15等。同时也能够模拟出VExpress FPGA开发板上大多数的外设。
+    这份RT-Thread BSP是针对QEMU/VExpress-A9的一份移植，也并未在真实的VExpress FPGA开发板上运行过，主要是提供给开发者一定的便利，能够使用、验证一定的功能。对于真实FPGA开发板的执行情况，不做任何假设。
+  description_en: vexpress-a9 models the combination of the Versatile Express motherboard and the CoreTile Express A9x4 daughterboard.
   small_image: documents/images/board_small.png
   large_image: documents/images/board_large.png
-  sale_contact_cn: http://www.st.com/stonline/contactus/contacts/index.php
-  sale_contact_global: http://www.st.com/stonline/contactus/contacts/index.php
-  buy_url_cn: http://www.alientek.com/
-  buy_url_global: http://www.alientek.com/
+  sale_contact_cn: http://www.arm.com/
+  sale_contact_global: http://www.arm.com/
+  buy_url_cn: http://www.arm.com/
+  buy_url_global: http://www.arm.com/
   price_cn: 238.00 CNY
   price_global: 35.00 USD
-  debugger: ST-LINK
+  debugger: qemu
   debug_interface: SWD
   emulator_machine: qemu-vexpress-a9
 chip:
-  device_vendor: STMicroelectronics
-  family_name: STM32
-  series_name: STM32L4
-  sub_series_name: STM32L475
-  chip_name: STM32L475VETx
-  rx_name: PA10
-  tx_name: PA9
-  clock_source: HSE
-  source_freq: '8000000'
-  target_freq: '240000000'
-  uart_name: UART1
+  device_vendor: ARM
+  family_name: ''
+  series_name: ''
+  sub_series_name: ''
+  chip_name: ''
+  rx_name: ''
+  tx_name: ''
+  clock_source: ''
+  source_freq: ''
+  target_freq: ''
+  uart_name: ''
 default_projects:
 - builtin_files:
   - files_and_folders:
@@ -86,16 +85,16 @@ docs:
   title: User's Guide
 example_projects: []
 features:
-- On-board ST-LINK/V2.1
-- SRAM:128K
-- SDIO WIFI:AP6181
-- 1.3 inch TFT:240*240
-- Auduo:ES8388
-- Sensor:ICM-20608
-- Sensor:AHT10
-- Motor:TC214B
-- Interface:ATK module
-- Examples:36 bare-metal demos and 30 RT-Thread demos
+- PL041 audio
+- PL181 SD controller
+- PL050 keyboard and mouse
+- PL011 UARTs
+- SP804 timers
+- I2C controller
+- PL031 RTC
+- PL111 LCD display controller
+- Flash memory
+- LAN9118 ethernet
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
 pkg_version: 0.1.1
