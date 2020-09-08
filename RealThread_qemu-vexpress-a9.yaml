@@ -82,8 +82,8 @@ default_projects:
   project_type: rt-thread|@full|@4.0.2
 docs:
 - category: manual
-  file: documents/manuals/QEMU System Emulation User’s Guide.pdf
-  title: User’s Guide
+  file: documents/manuals/QEMU System Emulation User's Guide.pdf
+  title: User's Guide
 example_projects: []
 features:
 - On-board ST-LINK/V2.1
