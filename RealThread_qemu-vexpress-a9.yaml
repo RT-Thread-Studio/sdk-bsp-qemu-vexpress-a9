@@ -1,5 +1,5 @@
 board:
-  name: qemu-vexpress-a9
+  name: QEMU-VEXPRESS-A9
   version: Rev.A
   vendor: ARM
   description_zh: Versatile Express系统由ARM Ltd提供，作为CortexA9四核处理器的开发环境，硬件由uATX主板和CoreTile Express A9x4子板组成。有关该系统的详细信息，可以访问 ARM官方页面 。
