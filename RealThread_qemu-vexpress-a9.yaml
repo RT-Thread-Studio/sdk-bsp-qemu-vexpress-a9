@@ -95,7 +95,18 @@ features:
 - PL111 LCD display controller
 - Flash memory
 - LAN9118 ethernet
+features_zh:
+- PL041 audio
+- PL181 SD controller
+- PL050 keyboard and mouse
+- PL011 UARTs
+- SP804 timers
+- I2C controller
+- PL031 RTC
+- PL111 LCD display controller
+- Flash memory
+- LAN9118 ethernet
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
 pkg_version: 0.1.1
-yaml_version: 1
+yaml_version: 2
