@@ -34,7 +34,6 @@ default_projects:
 - builtin_files:
   - files_and_folders:
     - .config
-    - .config.old
     - .cproject
     - .gitignore
     - .project
@@ -108,5 +107,5 @@ features_zh:
 - LAN9118 ethernet
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
-pkg_version: 0.1.1
+pkg_version: 0.1.2
 yaml_version: 2
