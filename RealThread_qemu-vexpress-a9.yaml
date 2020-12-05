@@ -78,6 +78,15 @@ default_projects:
   project_description: ''
   project_name: ''
   project_type: rt-thread|@full|@4.0.2
+- builtin_files:
+  - files_and_folders:
+    - "*"
+    source_path_offset: rt_smart_project_0
+    target_path_offset: ''
+  external_files: []
+  project_description: 'rt-thread smart kernel project'
+  project_name: ''
+  project_type: rt-thread|@full|@smart
 docs:
 - category: manual
   file: documents/manuals/QEMU System Emulation User's Guide.pdf
@@ -107,5 +116,5 @@ features_zh:
 - LAN9118 ethernet
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
-pkg_version: 0.1.2
+pkg_version: 1.0.0
 yaml_version: 2
