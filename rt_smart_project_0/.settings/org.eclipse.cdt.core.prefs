@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/PATH/delimiter=;
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/PATH/operation=append
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/PATH/value=${toolchain_install_path}/${musleabi_relative_path}
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/append=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/appendContributed=true

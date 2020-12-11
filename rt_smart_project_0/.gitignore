@@ -38,7 +38,3 @@ DebugConfig/
 RTE/
 settings/
 *.uvguix*
-cconfig.h
-.settings
-drivers/automac.h
-romfs.c
