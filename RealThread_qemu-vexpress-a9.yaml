@@ -64,7 +64,7 @@ default_projects:
     - include
     - libcpu/arm
     - libcpu/Kconfig
-    - libcpu/Sconscript
+    - libcpu/SConscript
     - src
     - tools
     - Kconfig
