@@ -116,5 +116,5 @@ features_zh:
 - LAN9118 ethernet
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
-pkg_version: 1.0.0
+pkg_version: 1.0.1
 yaml_version: 2
