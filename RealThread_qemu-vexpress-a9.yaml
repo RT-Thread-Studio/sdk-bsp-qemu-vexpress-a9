@@ -30,32 +30,10 @@ chip:
   source_freq: ''
   target_freq: ''
   uart_name: ''
-default_projects:
+template_projects:
 - builtin_files:
   - files_and_folders:
-    - .config
-    - .cproject
-    - .gitignore
-    - .project
-    - .rtstudio
-    - .settings
-    - applications
-    - cconfig.h
-    - drivers
-    - Kconfig
-    - link.lds
-    - makefile.targets
-    - qemu-dbg.bat
-    - qemu-dbg.sh
-    - qemu-nographic.bat
-    - qemu-nographic.sh
-    - qemu.bat
-    - qemu.sh
-    - README.md
-    - rtconfig.h
-    - rtconfig.py
-    - SConscript
-    - SConstruct
+    - "*"
     source_path_offset: rtt_default_project_0
     target_path_offset: ''
   external_files:
@@ -116,5 +94,5 @@ features_zh:
 - LAN9118 ethernet
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
-pkg_version: 1.0.2
-yaml_version: 2
+pkg_version: 1.0.3
+yaml_version: 3
