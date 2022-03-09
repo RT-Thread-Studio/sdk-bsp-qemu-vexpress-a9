@@ -69,7 +69,6 @@ docs:
 - category: manual
   file: documents/manuals/QEMU System Emulation User's Guide.pdf
   title: User's Guide
-example_projects: []
 features:
 - PL041 audio
 - PL181 SD controller
@@ -92,7 +91,17 @@ features_zh:
 - PL111 LCD display controller
 - Flash memory
 - LAN9118 ethernet
+example_projects:
+- project_name: lvgl
+  project_type: rt-thread|@full|@4.0.2
+  project_description: lvgl demo
+  builtin_files:
+  - files_and_folders:
+    - "*"
+    source_path_offset: project_1
+    target_path_offset: ''
+  external_files: []
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
-pkg_version: 1.0.5
+pkg_version: 1.0.6
 yaml_version: 3
