@@ -39,4 +39,4 @@ RTE/
 settings/
 *.uvguix*
 .settings
-drivers/automac.h
+
