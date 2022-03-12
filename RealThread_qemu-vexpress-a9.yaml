@@ -61,7 +61,6 @@ template_projects:
   project_description: ''
   builtin_files:
   - files_and_folders:
-    - "*"
     - .settings
     - applications
     - drivers
