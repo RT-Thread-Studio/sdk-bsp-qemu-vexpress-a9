@@ -31,7 +31,57 @@ chip:
   target_freq: ''
   uart_name: ''
 template_projects:
-- builtin_files:
+- project_name: RT-Thread
+  project_type: rt-thread|@full|@latest
+  project_description: ''
+  builtin_files:
+  - files_and_folders:
+    - .settings
+    - applications
+    - drivers
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - cconfig.h
+    - Kconfig
+    - link.lds
+    - makefile.targets
+    - qemu-dbg.bat
+    - qemu-dbg.sh
+    - qemu-nographic.bat
+    - qemu-nographic.sh
+    - qemu.bat
+    - qemu.sh
+    - README.md
+    - rtconfig_preinc.h
+    - rtconfig.h
+    - rtconfig.py
+    - SConscript
+    - SConstruct
+    source_path_offset: project_1
+    target_path_offset: ''
+  external_files: 
+  - package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_name: RT-Thread
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+    files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+- project_description: ''
+  project_name: ''
+  project_type: rt-thread|@full|@4.0.2
+  builtin_files:
   - files_and_folders:
     - "*"
     source_path_offset: rtt_default_project_0
@@ -53,18 +103,15 @@ template_projects:
     package_version: 4.0.2
     source_path_offset: ''
     target_path_offset: rt-thread
-  project_description: ''
+- project_description: 'rt-thread smart kernel project'
   project_name: ''
-  project_type: rt-thread|@full|@4.0.2
-- builtin_files:
+  project_type: rt-thread|@full|@smart
+  builtin_files:
   - files_and_folders:
     - "*"
     source_path_offset: rt_smart_project_0
     target_path_offset: ''
   external_files: []
-  project_description: 'rt-thread smart kernel project'
-  project_name: ''
-  project_type: rt-thread|@full|@smart
 docs:
 - category: manual
   file: documents/manuals/QEMU System Emulation User's Guide.pdf
@@ -91,16 +138,7 @@ features_zh:
 - PL111 LCD display controller
 - Flash memory
 - LAN9118 ethernet
-example_projects:
-- project_name: lvgl
-  project_type: rt-thread|@full|@4.0.2
-  project_description: lvgl demo
-  builtin_files:
-  - files_and_folders:
-    - "*"
-    source_path_offset: project_1
-    target_path_offset: ''
-  external_files: []
+example_projects: []
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
 pkg_version: 1.0.6
