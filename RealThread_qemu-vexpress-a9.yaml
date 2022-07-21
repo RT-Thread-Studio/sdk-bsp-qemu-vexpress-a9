@@ -141,5 +141,5 @@ features_zh:
 example_projects: []
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
-pkg_version: 1.0.6
+pkg_version: 1.0.7
 yaml_version: 3
